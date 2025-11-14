@@ -1,0 +1,2 @@
+# High_Availability_Appication_Using_Infrastrucutre_as_a_code_-IAC-_-Cloudformation-
+A fully automated, highly available AWS infrastructure built using CloudFormation. This project deploys a scalable web application using VPC networking, public/private subnets, an Application Load Balancer, Auto Scaling Group, EC2 instances, security groups, and S3-hosted static content—all orchestrated through Infrastructure as Code.
