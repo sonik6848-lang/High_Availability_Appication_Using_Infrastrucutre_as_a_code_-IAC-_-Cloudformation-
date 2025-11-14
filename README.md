@@ -1,4 +1,4 @@
-📘 High Availability Application Using Infrastructure as Code (CloudFormation)
+## 📘 High Availability Application Using Infrastructure as Code (CloudFormation)
 
 This project demonstrates how to design, automate, and deploy a highly available web application on AWS using Infrastructure as Code (IaC) with AWS CloudFormation.
 It includes reusable, modular templates for the network layer and application layer, along with deployment and teardown scripts for full automation.
@@ -27,7 +27,7 @@ CloudFormation Nested / Imported Outputs
 
 The infrastructure is divided into two CloudFormation stacks:
 
-1. Network Stack
+## 1. Network Stack
 
 Creates the foundational network resources:
 
@@ -41,7 +41,7 @@ Private Subnets
 
 Required networking outputs (exported for use by the application stack)
 
-2. Application (Udagram) Stack
+## 2. Application (Udagram) Stack
 
 Deploys the application layer:
 
@@ -57,21 +57,21 @@ Security Groups following least-privilege
 
 S3 bucket hosting static files pulled by EC2 instances
 
-🚀 Deployment Instructions
+## 🚀 Deployment Instructions
 1. Deploy Network Stack
 ./create.sh udagram-network-stack network.yml network-parameters.json
 
 2. Deploy Application Stack
 ./create.sh udagram-app-stack udagram.yml udagram-parameters.json
 
-🧹 Delete/Teardown Instructions
+## 🧹 Delete/Teardown Instructions
 1. Delete Application Stack
 ./delete.sh udagram-app-stack
 
 2. Delete Network Stack
 ./delete.sh udagram-network-stack
 
-🌐 Working Demo (Live URLs)
+## 🌐 Working Demo (URLs)
 Load Balancer URL
 
 http://udagra-webap-c1guah7clfo2-1176945879.us-east-1.elb.amazonaws.com/
@@ -82,7 +82,7 @@ http://udagram-server-infrastructure-static-content.s3-website-us-east-1.amazona
 
 The Load Balancer serves the static content pulled from the S3 bucket and rendered by EC2 instances.
 
-📸 Evidence of Work (Required for Project)
+## Evidence of Work (Required for Project)
 Option 1 (Used): Live URLs Provided
 
 If required for evaluation, the following screenshots are also included in the repository:
@@ -105,7 +105,7 @@ Application runs in private subnets
 
 Automated scaling for high availability
 
-📂 Repository Structure
+## 📂 Repository Structure
 📁 High-Availability-Application-Using-Infrastructure-as-Code-CloudFormation
 │── README.md
 │── network.yml
@@ -118,7 +118,7 @@ Automated scaling for high availability
 │── /screenshots
 │── /static-content (optional)
 
-📝 Submission Notes
+## 📝 Submission Notes
 
 Please pay particular attention to:
 
